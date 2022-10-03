@@ -36,10 +36,10 @@
               <input type="submit" value="Go">
             </div>
           </form>
+          <div class="hamburger">
+            <span class="bar">bar</span>
+          </div>
         </div>
-      </div>
-      <div class="hamburger">
-        <span class="bar">bar</span>
       </div>
       <nav>
         <div class="wrapper">
@@ -72,7 +72,7 @@
         <div class="wrapper">
           <div class="content">
             <h2 class="content-heading">Sign up</h2>
-            <p class="content-desc">Get the latest news on our events,exclusive offers and content</p>
+            <p class="content-desc">Get the latest news on our events, exclusive offers and content</p>
           </div>
         </div>
       </section>
@@ -81,10 +81,10 @@
       <section class="newsLetter">
         <div class="wrapper">
           <ul class="breadcrumb">
-            <li class="breadcrumb-list"><a href="#FIXME" title="EuroFinance"
-                rel="noopener noreferrer">EuroFinance</a></li>
-            <li class="breadcrumb-list"><a href="#FIXME" title="Newsletter sign up"
-                rel="noopener noreferrer">Newsletter sign up</a></li>
+            <li class="breadcrumb-list"><a href="#FIXME" title="EuroFinance" rel="noopener noreferrer">EuroFinance</a>
+            </li>
+            <li class="breadcrumb-list"><a href="#FIXME" title="Newsletter sign up" rel="noopener noreferrer">Newsletter
+                sign up</a></li>
           </ul>
           <h3 class="newsLetter-heading">Enter your details to subscribe to our newsletter</h3>
           <form action="#FIXME">
@@ -110,24 +110,28 @@
             </div>
             <div class="input-group">
               <label for="company-type">Company Type</label>
-              <select name="company-type" id="company-type">
-                <option selected disabled value="false">- select -</option>
-                <option value="banking">Banking</option>
-                <option value="Mutual-Funds">Mutual Funds</option>
-                <option value="Insurance">Insurance</option>
-                <option value="Stock-Market">Stock Market</option>
-              </select>
+              <div class="input-select">
+                <select name="company-type" id="company-type">
+                  <option selected disabled value="false">- select -</option>
+                  <option value="banking">Banking</option>
+                  <option value="Mutual-Funds">Mutual Funds</option>
+                  <option value="Insurance">Insurance</option>
+                  <option value="Stock-Market">Stock Market</option>
+                </select>
+              </div>
               <span class="inputError">error</span>
             </div>
             <div class="input-group">
               <label for="country">Country</label>
-              <select name="country" id="country">
-                <option selected disabled value="false">- Choose -</option>
-                <option value="India">India</option>
-                <option value="Australia">Australia</option>
-                <option value="China">China</option>
-                <option value="Russia">Russia</option>
-              </select>
+              <div class="input-select">
+                <select name="country" id="country">
+                  <option selected disabled value="false">- Choose -</option>
+                  <option value="India">India</option>
+                  <option value="Australia">Australia</option>
+                  <option value="China">China</option>
+                  <option value="Russia">Russia</option>
+                </select>
+              </div>
               <span class="inputError">error</span>
             </div>
             <div class="input-group">
@@ -138,10 +142,14 @@
             <p class="para1">EuroFinance is part of The Economist Group.Would you also like to receive information on
               subscription offers.Economist events and other products via email?</p>
             <div class="checkbox-group">
-              <input type="checkbox" name="yes-checkbox" id="yes-checkbox">
-              <label for="yes">Yes</label>
-              <input type="checkbox" name="no-checkbox" id="no-checkbox">
-              <label for="no">No</label>
+              <div class="checkbox-1">
+                <input type="checkbox" name="yes-checkbox" id="yes-checkbox">
+                <label for="yes">Yes</label>
+              </div>
+              <div class="checkbox-2">
+                <input type="checkbox" name="no-checkbox" id="no-checkbox">
+                <label for="no">No</label>
+              </div>
             </div>
             <p class="para2">The Economist Group is a global organisation and operates a strict privacy policy around
               the world.You can view our privacy policy at <a href="#FIXME" target="_blank"
