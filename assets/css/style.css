@@ -112,11 +112,129 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  position: relative;
+  background: linear-gradient(90deg,rgb(34,95,171),rgb(34,95,171),rgb(34,95,171),rgb(34,95,171,0.3),rgb(34,95,171,0.9),rgb(34,95,171)),url('https://fibreguard.com/uploads/_1200x630_crop_center-center_82_none/healthcare-waiting-room-interior-design.jpg?mtime=1595594386') no-repeat top center;
+  background-size: cover;
+  height: 65vh;
+}
 
+.top-bar .wrapper{
+  padding: 20px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.top-bar form {
+  display: flex;
+}
+.top-bar input {
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+.top-bar input[type="submit"] {
+  padding: 7px 12px;
+  background: rgb(54,159,227);
+  color: rgb(255,255,255);
+  transition: all 0.5s ease;
+}
 
+.top-bar input[type="submit"]:hover { background: rgb(43,121,193); }
 
+.logo {
+  padding: 4px 2% 0 0;
+  position: relative;
+  font-size: 33px;
+}
 
+.logo-link { color: rgb(255,255,255); }
+
+.logo::before {
+  content: '\f054';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgb(62,191,243);
+  font-family: "FontAwesome";
+  font-size: 18px;
+  font-weight: bold;
+  transform: rotate(314deg);
+}
+
+nav {
+  margin: 10px 0;
+  background: linear-gradient(90deg,rgb(43,121,193),rgb(43,121,193),rgb(43,121,193,0.5),rgb(35,98,173));
+}
+
+.nav-items {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0 10px;
+  color: rgb(255,255,255);
+  border-right: 1px solid rgb(62,191,243);
+  font-size: 12px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+.active-list .nav-link { color: rgb(62,191,243); }
+
+.nav-link:hover { color: rgb(62,191,243); }
+
+.nav-list:last-child .nav-link{ border: none; }
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  display: none; 
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  background-color: #000;
+  border-radius: 4px;
+  text-indent: -99999px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  background-color: inherit;
+  transition: all 0.3s;
+}
+
+.bar::before { top: -13px; }
+
+.bar::after { top: 13px; }
+
+.hamburger:hover .bar { transform: rotate(45deg); }
+
+.hamburger:hover .bar::before { display: none; }
+
+.hamburger:hover .bar::after {
+  transform: translateY(-13px) rotate(90deg);
+}
 
 /*=================================
   Header styling ends here
@@ -126,12 +244,25 @@ li {
   main styling starts here
 =================================*/
 
+/* banner section start */
+.banner {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
 
+.content-heading {
+  color: rgb(255,255,255);
+  font-size: 30px;
+}
 
-
-
-
-
+.content-desc {
+  width: 60%;
+  padding: 8px 0;
+  color: rgb(62,191,243);
+  font-size: 22px;
+}
+/* banner section end */
 
 /*=================================
   main styling ends here
