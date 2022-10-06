@@ -68,7 +68,7 @@ country.addEventListener('blur', function () {
 });
 
 email.addEventListener('blur', function () {
-  validateError(email, emailPattern, "invalid email");
+  validateError(email, emailPattern, "*invalid email");
 });
 
 // error function
