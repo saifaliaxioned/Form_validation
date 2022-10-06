@@ -667,12 +667,19 @@ footer .logo-link {
     height: 45vh;
   }
 
+  .bar::before {
+    top: -10px;
+  }
+  .bar::after {
+    top: 10px;
+  }
+
   .logo-link {
     font-size: 26px;
   }
 
   .content-heading {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .banner {
