@@ -351,7 +351,7 @@ nav {
   bottom: 7px;
 }
 
-.inputError {
+.inputError,.checkboxError {
   padding-top: 4px;
   display: none;
   color:  rgb(255, 0, 0);
